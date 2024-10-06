@@ -1,5 +1,5 @@
 import './App.css';
-import "./layout.scss"
+import "./Design/layout.scss"
 
 function App() {
   return (
