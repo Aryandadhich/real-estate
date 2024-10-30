@@ -1,3 +1,5 @@
+//entry point of application and main.jsx its another name 
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./Design/index.scss"
