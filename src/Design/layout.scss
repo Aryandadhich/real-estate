@@ -2,7 +2,7 @@
 
 .layout{
     height: 100vh;
-    max-width: 1160px;
+    max-width: 1366px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -11,16 +11,16 @@
 
     @include lg{
         background-color: rgb(178, 164, 139);
-        max-width: 1120px;
+        max-width: 920px;
     }
 
     @include md{
         background-color: rgb(239, 205, 210);
-        max-width: 780px;
+        max-width: 768px;
     }
     @include sm{
         background-color: rgb(230, 195, 195);
-        max-width: 368px;
+        max-width: 640px;
     }
     
 }
