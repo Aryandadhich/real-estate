@@ -1,19 +1,19 @@
 //we are creating screens for multiple devices
 
 @mixin sm{
-    @media(max-width: 790px){
+    @media(max-width: 680px){
         @content;
     }
 }
 
 @mixin md{
-    @media(max-width: 815px){
+    @media(max-width: 911px){
         @content;
     }
 }
 
 @mixin lg{
-    @media(max-width: 1140px){
+    @media(max-width: 1080px){
         @content;
     }
 }
