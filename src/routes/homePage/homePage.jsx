@@ -2,8 +2,9 @@ import './HomePage.scss'
 
 function HomePage() {
   return (
-    <div>
-      
+    <div className='HomePage'>
+      <div className="textContainer">text</div>
+      <div className="imgContainer">img</div>
     </div>
   )
 }

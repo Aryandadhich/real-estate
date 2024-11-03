@@ -7,6 +7,9 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    
 
 
     @include lg{
@@ -23,6 +26,10 @@
         max-width: 658px;
     }
     
+    .content{
+        //height: calc(100vh - 100px);
+        flex : 1; //we can use the upper 1 also this is just for home page to cover up the screen 
+    }
 }
 
 //here is the color for diffrent screen
