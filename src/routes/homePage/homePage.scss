@@ -4,9 +4,48 @@
 
     .textContainer{
         flex: 3;
+
+        .wrapper{
+            padding-right: 100px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            height: 100%;
+
+            .title{
+                font-size: 40px;
+            }
+
+            .boxes{
+                display: flex;
+                justify-content: space-between;
+
+                h1{
+                    font-size: 32px;
+                }
+                h2{
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+            .theory{
+                font-size: 14px;
+            }
+        }
     }
     .imgContainer{
         flex: 2;
         background-color: #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img{
+               width: 110%;
+               position: absolute;
+               margin-left: -10%;
+        }
     }
 }
