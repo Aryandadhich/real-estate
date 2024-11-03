@@ -1,40 +1,44 @@
-.HomePage{
+.HomePage {
     display: flex;
     height: 100%;
 
-    .textContainer{
+    .textContainer {
         flex: 3;
 
-        .wrapper{
-            padding-right: 100px ;
+        .wrapper {
+            padding-right: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 50px;
             height: 100%;
 
-            .title{
+            .title {
+                margin-top: -5%;
                 font-size: 40px;
             }
 
-            .boxes{
+            .boxes {
                 display: flex;
                 justify-content: space-between;
 
-                h1{
+                h1 {
                     font-size: 32px;
                 }
-                h2{
+
+                h2 {
                     font-size: 14px;
                     font-weight: 300;
                 }
             }
-            .theory{
+
+            .theory {
                 font-size: 14px;
             }
         }
     }
-    .imgContainer{
+
+    .imgContainer {
         flex: 2;
         background-color: #fcf5f3;
         position: relative;
@@ -42,10 +46,10 @@
         align-items: center;
         justify-content: flex-start;
 
-        img{
-               width: 110%;
-               position: absolute;
-               margin-left: -10%;
+        img {
+            width: 110%;
+            position: absolute;
+            margin-left: -10%;
         }
     }
 }
