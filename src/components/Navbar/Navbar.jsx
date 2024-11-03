@@ -1,6 +1,12 @@
+import { useState } from "react";
 import "./navbar.scss"
 
 function Navbar (){
+  const [open, setopen] = useState(false);
+
+  const sidebar = () => {
+    setopen(open)
+  }
     return(
       <nav>
         <div className="left">
@@ -17,9 +23,10 @@ function Navbar (){
         <a href="/">Sign in</a>
         <a href="/" className="register">Sign up</a>
         <div className="menuIcon">
-          <img src="/menu.png" alt=""/>
+{/* giving a function of setstate directy in image otherwise we can create a function and pass it here  */}
+          <img src="/menu.png" alt="" onClick={()=>setopen(!open)}/>
         </div>
-        <div className="menu">
+        <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
