@@ -1,12 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "./searchBar.scss";
+//insted of doing this all thing for type i can do this go to end ....
 
+const types = ["buy", "rent"];
 
 function SearchBar() {
+  const [query, setQuery] = useState({
+    type: "buy",
+    location: "",
+    minPrice: 0,
+    maxPrice: 0,
+  });
+
+  const SwitchType = (val) => {
+    setQuery((prev) => ({ ...prev, type: val }));
+  };
+
   return (
     <div className='searchBar'>
-      <div className="type"></div>
-      <button>Buy</button>
-      <button>Rent</button>
+      <div className="type">
+        {types.map((type) => (
+          <button key={type}
+            onClick={() => SwitchType(type)}
+            className={query.type === type ? "active" : ""}>
+            {type}
+          </button>
+        ))}
+      </div>
       <form>
         <input type='text' name='location' placeholder='City Location'
         />
@@ -23,3 +43,25 @@ function SearchBar() {
 }
 
 export default SearchBar;
+
+
+// function SearchBar() {
+//   const [type, setType] = useState("buy"); // Separate state just for type
+
+//   return (
+//     <div className='searchBar'>
+//       {/* Toggle buttons for "buy" and "rent" */}
+//       <div className="type">
+//         <button
+//           onClick={() => setType("buy")}
+//           className={type === "buy" ? "active" : ""}
+//         >
+//           Buy
+//         </button>
+//         <button
+//           onClick={() => setType("rent")}
+//           className={type === "rent" ? "active" : ""}
+//         >
+//           Rent
+//         </button>
+//       </div>

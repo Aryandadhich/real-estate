@@ -1,6 +1,6 @@
 @import "./responsive.scss";
 
-.layout{
+.layout {
     height: 100vh;
     max-width: 1151px;
     margin-left: auto;
@@ -9,26 +9,27 @@
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    
 
 
-    @include lg{
+
+    @include lg {
         background-color: rgb(178, 164, 139);
         max-width: 1025px;
     }
 
-    @include md{
+    @include md {
         background-color: rgb(239, 205, 210);
         max-width: 790px;
     }
-    @include sm{
+
+    @include sm {
         background-color: rgb(230, 195, 195);
         max-width: 658px;
     }
-    
-    .content{
+
+    .content {
         //height: calc(100vh - 100px);
-        flex : 1; //we can use the upper 1 also this is just for home page to cover up the screen 
+        flex: 1; //we can use the upper 1 also this is just for home page to cover up the screen 
     }
 }
 
