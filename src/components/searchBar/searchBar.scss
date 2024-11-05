@@ -3,7 +3,7 @@
 .searchBar {
     .type {
         button {
-            padding: 16px 36px;
+            padding: 15px 30px;
             border: 1px solid #999;
             border-bottom: none;
             cursor: pointer;
@@ -40,19 +40,30 @@
         display: flex;
         justify-content: space-between;
         height: 64px;
-        gap: 5px;
+        gap: 3px;
 
         input {
             border: none;
             padding: 0px 10px;
-            width: 120px;
+            width: 170px;
 
             @include lg {
                 padding: 0px 5px;
+                width: 150px;
 
                 &:nth-child(2),
                 &:nth-child(3) {
                     width: 130px;
+                }
+
+            }
+
+            @include md {
+                width: 220px;
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 150px;
                 }
             }
         }
@@ -64,8 +75,8 @@
             flex: 1;
 
             img {
-                width: 28px;
-                height: 28px;
+                width: 24px;
+                height: 24px;
             }
         }
     }

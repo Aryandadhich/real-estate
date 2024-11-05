@@ -15,9 +15,16 @@
             gap: 50px;
             height: 100%;
 
+            @include md {
+                padding: 0;
+            }
+
             .title {
-                margin-top: -5%;
                 font-size: 40px;
+
+                @include lg {
+                    font-size: 44px;
+                }
             }
 
             .boxes {
@@ -26,6 +33,10 @@
 
                 h1 {
                     font-size: 32px;
+
+                    @include lg {
+                        font-size: 32px;
+                    }
                 }
 
                 h2 {
@@ -57,7 +68,9 @@
             position: absolute;
             right: 0;
 
-
+            @include lg {
+                width: 105%;
+            }
         }
     }
 }
