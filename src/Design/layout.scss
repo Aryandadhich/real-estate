@@ -13,17 +13,17 @@
 
 
     @include lg {
-        background-color: rgb(178, 164, 139);
+        // background-color: rgb(178, 164, 139);
         max-width: 1025px;
     }
 
     @include md {
-        background-color: rgb(239, 205, 210);
+        //background-color: rgb(239, 205, 210);
         max-width: 790px;
     }
 
     @include sm {
-        background-color: rgb(230, 195, 195);
+        //background-color: rgb(230, 195, 195);
         max-width: 658px;
     }
 
