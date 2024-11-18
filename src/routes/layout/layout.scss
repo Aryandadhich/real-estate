@@ -28,8 +28,8 @@
     }
 
     .content {
-        //height: calc(100vh - 100px);
-        flex: 1; //we can use the upper 1 also this is just for home page to cover up the screen 
+        height: calc(100vh - 100px);
+        //flex: 1; //we can use the upper 1 also this is just for home page to cover up the screen 
     }
 }
 
