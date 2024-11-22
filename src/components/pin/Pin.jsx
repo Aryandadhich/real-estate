@@ -16,7 +16,7 @@ function Pin({ item }) {
                 </div>
             </Popup>
         </Marker>
-    )
+    );
 }
 
-export default Pin
+export default Pin;
