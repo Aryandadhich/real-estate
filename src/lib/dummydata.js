@@ -162,9 +162,9 @@ export const singlePostData = {
     price: 1200,
     images: [
         "https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?ga=GA1.1.461698922.1731649143&semt=ais_hybrid",
-        "https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?ga=GA1.1.461698922.1731649143&semt=ais_hybrid",
-        "https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?ga=GA1.1.461698922.1731649143&semt=ais_hybrid",
-        "https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?ga=GA1.1.461698922.1731649143&semt=ais_hybrid",
+        "https://media.istockphoto.com/id/1129076301/photo/chinese-style-bedroom-interior.jpg?s=1024x1024&w=is&k=20&c=vlEnYFkOlOQwiFmHlYLGuDsQ_5Nh-mRxuH5thGJwFxA=",
+        "https://cdn.pixabay.com/photo/2016/04/15/11/46/bedroom-1330846_1280.jpg",
+        "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg",
     ],
     bedRooms: 2,
     bathroom: 1,
