@@ -59,20 +59,20 @@ function SinglePage() {
                     </div>
                     <p className="title">Sizes</p>
                     <div className="sizes">
-                        <img src="/size.png" alt="" />
-                        <div className="sizemeasure">
+                        <div className="size">
+                            <img src="/size.png" alt="" />
                             <span>80sqm (861sqft)</span>
                         </div>
-                    </div>
-                    <div className="sizes">
-                        <img src="/bed.png" alt="" />
-                        <div className="sizemeasure">
-                            <span>2 bed</span>
+                        <div className="sizes">
+                            <img src="/bed.png" alt="" />
+                            <div className="sizemeasure">
+                                <span>2 bed</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="sizes">
-                        <img src="/bath.png" alt="" />
-                        <span>1 bathroom</span>
+                        <div className="sizes">
+                            <img src="/bath.png" alt="" />
+                            <span>1 bathroom</span>
+                        </div>
                     </div>
                     <p className="title">Nearby Places</p>
                     <div className="listHorizontal">
