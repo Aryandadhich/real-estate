@@ -1,15 +1,53 @@
+@import "../../Design/responsive.scss";
+
 .singlePage {
     display: flex;
     height: 100%;
+    overflow: hidden;
+
+    @include md {
+        flex-direction: column;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        /* Makes the scrollbar less obtrusive */
+        scrollbar-color: #c1c1c1
+    }
 
 
     .details {
         flex: 3;
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: auto;
+        padding-bottom: 12px;
+
+        .details:hover::-webkit-scrollbar,
+        .features:hover::-webkit-scrollbar {
+            display: block;
+            /* Only shows scrollbar on hover */
+        }
+
+        @include md {
+            padding-right: 10px;
+            /* Adds space only on medium and smaller screens */
+        }
+
+
+        @include md {
+            flex: none;
+            height: max-content;
+            margin-bottom: 10px;
+        }
 
         .wrapper {
             padding-right: 50px;
+
+            @include lg {
+                padding-right: 20px;
+            }
+
+            @include md {
+                padding-right: 0px;
+            }
 
             .info {
                 margin-top: 50px;
@@ -17,6 +55,11 @@
                 .top {
                     display: flex;
                     justify-content: space-between;
+
+                    @include sm {
+                        flex-direction: column;
+                        gap: 20px;
+                    }
 
                     .post {
                         display: flex;
@@ -61,6 +104,10 @@
                         background-color: rgba(254, 205, 81, 0.209);
                         font-weight: 600;
 
+                        @include sm {
+                            padding: 20px 50px;
+                        }
+
                         img {
                             width: 50px;
                             height: 50px;
@@ -74,7 +121,6 @@
                     margin-top: 50px;
                     color: #555;
                     line-height: 20px;
-                    padding-bottom: 8%;
                 }
             }
         }
@@ -84,13 +130,31 @@
         flex: 2;
         background-color: #fcf5f3;
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: auto;
+        padding-right: 12px;
+        padding-bottom: 15px;
+
+        .details:hover::-webkit-scrollbar,
+        .features:hover::-webkit-scrollbar {
+            display: block;
+            /* Only shows scrollbar on hover */
+        }
+
+        @include md {
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+        }
 
         .wrapper {
             padding: 0px 20px;
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            @include md {
+                padding: 20px;
+            }
 
             img {
                 width: 24px;
@@ -103,17 +167,16 @@
                 margin-bottom: 10px;
             }
 
-            .feauture {
+            .feature {
                 display: flex;
-                align-items: center; //center item vertically
+                align-items: center;
                 gap: 10px;
-
 
                 img {
                     background-color: rgba(254, 205, 81, 0.209);
                 }
 
-                .textfeature {
+                .featureText {
                     span {
                         font-weight: bold;
                     }
@@ -145,11 +208,43 @@
                 display: flex;
                 justify-content: space-between;
 
+                @include lg {
+                    font-size: 12px;
+                }
+
                 .size {
                     display: flex;
                     align-items: center;
                     gap: 10px;
                     background-color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+
+            .mapContainer {
+                width: 100%;
+                height: 200px;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: white;
+                    border: 1px solid #fece51;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
                 }
             }
         }
