@@ -1,9 +1,8 @@
-import React from 'react';
-import { listData } from '../../lib/dummydata';
 import './list.scss';
 import Card from "../card/Card";
+import { listData } from '../../lib/dummydata';
 
-function list() {
+function List() {
     return (
         <div className='list'>
             {listData.map(item => (
@@ -13,4 +12,4 @@ function list() {
     )
 }
 
-export default list
+export default List

@@ -1,5 +1,7 @@
 import React from 'react';
 import "./profilePage.scss";
+import List from "../../components/list/List";
+
 
 function ProfilePage() {
     return (
@@ -21,10 +23,10 @@ function ProfilePage() {
                         <h1>My List</h1>
                         <button>Ceate new post</button>
                     </div>
-                    <list />
+                    <List />
                     <div className="title">
                         <h1> Save list</h1>
-                        <list />
+
                     </div>
                 </div>
             </div>
